@@ -6,6 +6,8 @@ My entry for Odin Recipe Project consists of recipes for some of my favorite swe
 ## Screenshots
 
 ![Mooncake Recipe Preview](mooncake-recipe-preview.png)
+![Tanghulu Recipe Preview](tanghulu-recipe-preview.png)
+![Brownie Recipe Preview] (brownie-recipe-preview.png)
 
 ## References
 
