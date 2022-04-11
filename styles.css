@@ -5,7 +5,7 @@
 }
 
 main {
-    width: 800px;
+    max-width: 800px;
     margin: 30px auto;
     padding: 30px;
     border: 1px solid #000000;
@@ -27,8 +27,12 @@ header h1 {
     text-transform: uppercase;
 }
 
+header p {
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+}
+
 .small-header {
-    font-size: 20px;
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
     font-weight: 400;
 }
 
@@ -57,18 +61,19 @@ header h1 {
 .ingredients-wrapper h2, .instructions h2 {
     text-transform: uppercase;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem) ;
 }
 
 /* Ingredients */
 
 .ingredients h2 {
-    font-size: 1.2rem;
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
     text-align: left;
 }
 
 .ingredients ul {
     margin-bottom: 0;
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
 }
 
 /* Times */
@@ -91,7 +96,7 @@ header h1 {
 
 .times h3, .times p {
     text-transform: uppercase;
-    font-size: 0.8rem;
+    font-size: clamp(0.5rem, 2.5vw, 0.8rem);
     margin: 0;
 }
 
@@ -104,11 +109,12 @@ header h1 {
 
 .carousel-item h3 {
     text-transform: uppercase;
-    font-size: 1.2rem;
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
 }
 
 .carousel-item p {
     margin-bottom: 0;
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
 }
 
 .carousel-item p span {
@@ -128,7 +134,7 @@ footer {
 footer p {
     margin: 0;
     text-align: center;
-    font-size: 0.8rem;
+    font-size: clamp(0.6rem, 2.5vw, 0.8rem);
 }
 
 footer a {
@@ -139,4 +145,24 @@ footer a {
 
 footer a:hover {
     color: #000000c0;
+}
+
+@media screen and (max-width: 768px) {
+
+    .main {
+        margin: 30px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .prep-time, .cook-time, .total-time {
+        padding: 10px 0;
+    }
+
+    .carousel-item {
+        height: 100%;
+        padding: 0 15px;
+    }
 }
