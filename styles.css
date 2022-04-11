@@ -17,7 +17,7 @@ main {
 }
 
 
-/* Header */
+/* Header | Top Content */
 
 header {
     text-align: center;
@@ -32,7 +32,7 @@ header h1 {
     font-weight: 400;
 }
 
-/* Image */
+/* Image | Middle Content */
 
 .mooncake-img img {
     width: 50%;
@@ -43,6 +43,8 @@ header h1 {
 
 }
 
+/* Bottom Content */
+
 .content {
     display: flex;
     flex-direction: row;
@@ -52,15 +54,24 @@ header h1 {
     align-items: stretch;
 }
 
-.content-wrapper h2, .instructions h2 {
+.ingredients-wrapper h2, .instructions h2 {
     text-transform: uppercase;
     text-align: center;
     font-size: 1.5rem;
 }
 
+/* Ingredients */
+
 .ingredients h2 {
     font-size: 1.2rem;
+    text-align: left;
 }
+
+.ingredients ul {
+    margin-bottom: 0;
+}
+
+/* Times */
 
 .times {
     display: flex;
@@ -84,9 +95,11 @@ header h1 {
     margin: 0;
 }
 
+/* Instructions | Carousel */
+
 .carousel-item {
     padding: 10px 40px;
-    height: 293px;
+    height: 262px;
 }
 
 .carousel-item h3 {
@@ -105,6 +118,8 @@ header h1 {
 .list-instructions span {
     font-weight: 800
 }
+
+/* Footer */
 
 footer {
     margin-top: 8px;
