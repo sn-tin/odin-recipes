@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    border: 2px solid #000000;
+}
+
+.border-solid {
+    border: 1px solid #000000;
+    padding: 10px 30px;
+}
+
+/* Nav */
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: clamp(0.7rem, 2.5vw, 1rem);
+    font-weight: 800;
+}
+
+nav a:hover {
+    color: #000000b8;
+}
+
+
+/* Header | Top Content */
+
+header {
+    text-align: center;
+}
+
+header h1 {
+    text-transform: uppercase;
+}
+
+header p {
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+}
+
+.small-header {
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+    font-weight: 400;
+}
+
+/* Image | Middle Content */
+
+.mooncake-img img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+}
+
+/* Bottom Content */
+
+.content {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    flex-grow: 1;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+
+/* Ingredients */
+
+.ingredients-wrapper h2, .instructions h2 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem) ;
+}
+
+.ingredients h2 {
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+    text-align: left;
+}
+
+.ingredients ul {
+    margin-bottom: 0;
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+    height: 68.6vh;
+}
+
+/* Times */
+
+.times {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 8px;
+}
+
+.cook-time {
+    border-left: none;
+    border-right: none;
+}
+
+.prep-time, .total-time, .cook-time {
+    width: 100%;
+    text-align: center;
+}
+
+.times h3, .times p {
+    text-transform: uppercase;
+    font-size: clamp(0.5rem, 2.5vw, 0.8rem);
+    margin: 0;
+}
+
+/* Instructions | Carousel */
+
+.carousel-item {
+    padding: 10px 40px;
+    height: 59.2vh;
+}
+
+.carousel-item h3 {
+    text-transform: uppercase;
+    font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+}
+
+.carousel-item p {
+    margin-bottom: 0;
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+}
+
+.carousel-item p span {
+    font-weight: 800;
+}
+
+.list-instructions span {
+    font-weight: 800
+}
+
+/* Footer */
+
+footer {
+    margin-top: 8px;
+}
+
+footer div {
+    margin: 0;
+    text-align: center;
+    font-size: clamp(0.6rem, 2.5vw, 0.8rem);
+}
+
+footer a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: 800;
+}
+
+footer a:hover {
+    color: #000000c0;
+}
+
+@media screen and (max-width: 768px) {
+
+    main {
+        margin: 30px 30px;
+    }
+
+    nav ul {
+        gap: 5px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .ingredients ul {
+        height: 100%;
+    }
+
+    .prep-time, .cook-time, .total-time {
+        padding: 10px 0;
+    }
+
+    .carousel-item {
+        height: 100%;
+        padding: 0 10%;
+    }
+}
