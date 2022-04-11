@@ -8,7 +8,7 @@ main {
     max-width: 800px;
     margin: 30px auto;
     padding: 30px;
-    border: 1px solid #000000;
+    border: 2px solid #000000;
 }
 
 .border-solid {
@@ -149,8 +149,8 @@ footer a:hover {
 
 @media screen and (max-width: 768px) {
 
-    .main {
-        margin: 30px;
+    main {
+        margin: 30px 30px;
     }
 
     .content {
@@ -163,6 +163,6 @@ footer a:hover {
 
     .carousel-item {
         height: 100%;
-        padding: 0 15px;
+        padding: 0 10%;
     }
 }
